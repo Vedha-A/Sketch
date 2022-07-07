@@ -9,7 +9,7 @@ function clearCanvas(){
     background("white");
 }
 function preload(){
-    classifier = ml5.imageClassifier('Doodle Net');
+    classifier = ml5.imageClassifier('DoodleNet');
 }
 function classifyCanvas(){
     classifier.classify(canvas, gotResults);
